@@ -1,0 +1,189 @@
+
+.work-sans-font{
+    font-family: "work sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.display-flex{
+    display: flex;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+   
+
+} 
+/* .left-center a {
+    color: tomato;
+    
+}
+.right-link a:first-child {
+    color: tomato;
+}
+.right-link a.button {
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+    border: 2px solid tomato;
+    border-radius: 25%;
+    padding: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width:50px;
+    hight: 5px;
+    left: 50px;
+    text-align: center;
+}
+.custom-paragraph {
+    width: 800px;
+    font-style: normal; 
+    font-size: 64px;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .custom-paragraph .highlight {
+        font-style: italic;
+        font-weight: var(-40%);
+         color: white;
+         
+    }
+     .thin-text {
+        font-style: italic;
+        font-weight: 1;
+        font-size: 6em;
+        text-align: center;
+     }
+  */
+.navbar{
+text-decoration: none;
+color: white;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+}
+/* .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 349px;
+    height: 400px;
+
+    }
+    .image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .container img {
+       margin-right: 15px; 
+     }
+  
+     .text-box {
+        transform: translatex(-40%);
+        background-color:rgb(20, 19, 20) ;
+        color: darkgrey;
+        padding: 20px; 
+        border-radius: 10px;
+        text-align: center;
+        width: calc(100%-20px);
+        font-size: 5px;
+        height: 30px;
+        width: 200px;
+        margin-left: -20% ;
+        margin-top: -48%;
+    }
+    .large-text {
+        font-size: 27px;
+        font-weight: bold;
+        color: whitesmoke;
+      }
+      .Important-text-box {
+        font-size: 10px;
+        background-color: black;
+        color: darkgrey;
+        line-height: 1.6;
+        margin: 10px 0;
+        padding: 10px;
+        text-align: center;
+        margin-left: 80%;
+        margin-right: -130%;
+        margin-top: -110%;
+      }
+     
+      .text-box2 {
+        margin-bottom: 20px;
+        font-size: 15px;
+        background-color: rgb(20, 19, 20) ;
+        color: darkgrey;
+        padding: 25px;
+        border-radius: 10px;
+        text-align: center;
+        width: calc(100%-20px);
+        font-size: 8px;
+        height: 20px;
+        width: 200px;
+        margin-left: -100%;
+        margin-top: 75%;
+      }
+      .circle {
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        top: 315px;
+        left: 735px;
+      }
+      .large-text2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: whitesmoke;
+      }
+      .orange-button {
+        background-color: orangered;
+        color: whitesmoke;
+        border: none;
+        padding: 2px 2px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 10px;
+        margin-left: 15%;
+        margin-right: 20%;
+        margin-top: -30%;
+        display: inline-block;
+        border-redius: 5px;
+        cursor: pointer;
+        transition: background-color; 
+      } 
+      .orange-button: hover {
+        background-color: darkorange;
+      }
+      .black-button {
+        background-color: black;
+        color: whitesmoke;
+        border: 2px solid white;
+        border-color: solid white;
+        padding: 2px 2px;
+        text-align: center;
+        text-decoration:none;
+        font-size: 10px;
+        margin-left: -18%;
+        margin-right: 20%;
+        margin-top: 20%;
+      }
+      .black-button: hover {
+        background-color: darkorange;
+      } 
+      @media screen and (max-width: 576){
+
+      }*/
+      
