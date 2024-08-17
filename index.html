@@ -4,58 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment2</title>
-    <style>    
+    <style>  
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+      .wrapper {
+        width: 2000px;
+        padding: 20px;
+        /* border: 2px solid red; */
+        background-color:rgba(34, 34, 34, 1);
+
+        box-sizing: border-box;
+        margin: 0 auto;       
+      }  
       .container {
         display: flex;
         justify-content: space-between;
-        width: 150%;
+        width: 100%;
         margin: 0 auto;
-      }
+       }
        
-      .left-section {
-        width: 45%;
-        border: 1px solid whitesmoke;
-      }
-      table {
+     
+      .left-table, .right-section {
         width: 100%;
-        border-collapse: collapse;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .left-table table,
+      .left-table th,
+      .left-table td {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-collapse: collapse;        
+      }
+      .right-section table {
+        border-spacing: 5px;
+        border-collapse: separate;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.6);
+        height: 80px;
+       }
+      
+       .right-section td, .right-section th {
+        padding:5px;
+        height: 5px;
+       }
+      table, th, td {
+        padding: 5px;
+        text-align: center;
         
-      }
-      table, th, td {  
-        /* border: 1px solid blue;   */
-         background-color: rgb(42, 41, 41);
-        color: whitesmoke;
-        border-radius: 8px;
-      }
-      th, td {
-        padding: 5px;
-        text-align: center;
-        /* border: 1px solid whitesmoke; */
-      }
-     .right-section {
-        width: 45%;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-      table, th, td {  
-        /* border: 1px solid black;  */
-         background-color: rgb(42, 41, 41);
-        color: whitesmoke;
-        border-radius: 8px;
-      }
-          
-      th, td {
-        padding: 5px;
-        text-align: center;
-      }
-      .left-section > div {
-        margin-bottom: 20px;
       }
       .right-section > div {
         margin-bottom: 20px;
       }
+      .title, .subtitle {
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 10px;
+        color: white;
+        font-size: 13px;
+      }
+      .small-text {
+        font-size: 0.9em;
+        text-align: left;
+        color: darkgray;
+      }
+      .red-button { 
+
+        display: inline-block;
+        padding: 5px 30px;
+        background-color: tomato;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 15px;
+      }
+      .button-call {
+        text-align: left;
+        padding: 10px;
+      }
+     
     </style>
     <link rel="stylesheet" href="./Styles/assignment2.css" />
     <script
@@ -117,9 +146,12 @@
             <div class="text-box">
             <span class="large-text">500+</span><br> Free Workout Videos
           </div>
+          
           <div class="text-box2">
-            <div class="circle"></div>
-            <span class="large-text2">300+</span><br> Video tutorial
+            <div class="top-box">
+              <div class="circle"></div>            
+            <span class="large-text2">300+</span><br> </div>
+            <div>Video tutorial</div>
           </div>
         </div>
       </div>
@@ -176,6 +208,8 @@
      <div class="image-content">
      <img src="Images/run.jpg"/>
      </div>
+    </div>
+  </div>
      
      <br>
     <br> 
@@ -200,22 +234,22 @@
 
      <div class="image-grid">
       <div class="image-item-grid aqua-overlay">
-          <img src="Images/exercise1.jpg">
+          <img src="Images/exercise1.jpg" alt="Exercise 1">
           </div>
       <div class="image-item-grid red-overlay">
-          <img src="Images/exercise2.png">         
+          <img src="Images/exercise2.png" alt="Exercise 2">         
       </div>
           <div class="image-item-grid">
-         <img src="Images/exercise3.png">          
+         <img src="Images/exercise3.png" alt="Exercise 3">          
       </div>
       <div class="image-item-grid">
-          <img src="Images/exercise4.png">        
+          <img src="Images/exercise4.png" alt="Exercise 4">        
       </div>
       <div class="image-item-grid green-overlay">
-          <img src="Images/exercise5.jpg"> 
+          <img src="Images/exercise5.jpg" alt="Exercise 5"> 
       </div>    
           <div class="image-item-grid blue-overlay">
-          <img src="Images/exercise6.jpg">          
+          <img src="Images/exercise6.jpg" alt="Exercise 6">          
           </div>
       </div>
 
@@ -225,13 +259,11 @@
           access to a gym.</small>
         </p>
       </div>
-  <!-- <br>
-  <br>
-  <br>
-  <br> -->
- 
+
+    <div class="wrapper">
       <div class="container">
-        <div class="left-section">
+        <div class="left-table">
+          <div class="title">BMI Calculate chart</div>
          <table>
           
             <tr>
@@ -254,9 +286,14 @@
             <tr><td>30.0-and-Above</td>
                 <td>Obese</td>
             </tr>
+           
           </table>
         </div>
         <div class="right-section">
+          <div class="subtitle">Calculate your BMI</div>
+          <div class="small-text">
+            We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.
+          </div>
           <div>
             <table>
               <tr>
@@ -265,24 +302,66 @@
               </tr>
               <tr>
                 <td>Age</td>
-                <td>Sex</td>
+                <td>Sex &#x2228;</td>
               </tr>
               <tr>
-                <td>Select an activity factor</td>
+                <td colspan="2" style="text-align: center;" >Select an activity factor &#x2228;</td>
+                <td></td>
               </tr>
+             
             </table>
           </div>
-        </div>
+           <td colspan="2" class="button-call">
+                  <a href="#" class="red-button">Calculate</a>
+                </td>
+              </div>
+           </div>
+         </div>
+      
+      <div class="Meet">
+       <h1>
+          Meet Our Team<br>
+          <small>We believe fitness should be accessible to everyone, everywhere, regardless of income or 
+            access to a gym.</small>
+        </h1>
       </div>
-          <!-- <div>
-            <table>
-              <tr>
-                <th>New</th>
-              </tr>
-              <tr>
-                <td>unknown</td>
-              </tr>
-            </table>
-          </div> -->
+      <div class="wrapper">
+      <div class="image-content-team">
+        <img src="Images/trainer1.png">
+      
+      <img src="Images/trainer2.png">
+      <img src="Images/trainer3.png">
+      <img src="Images/trainer4.png">
+      <img src="Images/trainer5.png">
+      <img src="Images/trainer6.png">
+      </div>
+     </div> 
+     <div class="box-container">
+      <div class="left-content">
+        <h1><p><strong>Fitness</strong><br></h1>
+         <small>We believe fitness should be accessible to everyone, 
+          everywhere.</small>
+        </p>
+      </div>
+      <div class="left-content">
+       <h2><p>Get Started</p></h2>
+       <small><p>Service</p>
+        <p>Contact Us</p>
+        <p>Affiliate Program</p>
+        <p>About Us</p></small>
+     </div>
+     <div class="right-column">
+        <h2><p>Get Started</p></h2>
+        <small><p>Fitness</p>
+        <p>Platform</p>
+        <p>Workout Libary</p>
+        <p>App Design</p></small>
+      </div>
+    </div>
+     <div class="footer">
+     <small>All rights reserved @Fitness 2024</small> 
+     </div>
+    
+
   </body>
 </html>
