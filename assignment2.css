@@ -130,7 +130,6 @@ nav a {
 }
   .text-box2 {
     transform: translateX(10%);
-    
      /* margin-bottom: 20px; */
      background-color: rgb(28, 27, 28) ;
      color: darkgrey;
@@ -147,10 +146,10 @@ nav a {
 .top-box {
   display: flex;
   text-align: center;
-  /* ttext center e anote hobe */
 }
 
   .circle {
+    display: flex;
   width: 25px;
   height: 15px;
   background-color: red;
@@ -179,22 +178,15 @@ nav a {
     align-items: center;
     text-align: center;
   }
-
-/* এটা দিলে ছোট স্ক্রিন এ অন্যরকম দেখায় */
-  /* .text-box, .text-box2 {
-    display: block;
-   /* width: 50%;
-   padding: 15px; */
-   
-  }
   
   .circle {
     width: 10%;
     padding: 5px;
     margin: 0 auto;
-  } */
+  }
   .large-text, .large-text2 {
     font-size: 2em;
+}
 }
 
 
@@ -208,7 +200,7 @@ nav a {
   font-size: 10px;
   color: darkgray;
 }
-/* hight beshi ken dekhote hobe */
+
  .image-container { 
   display: flex;
   justify-content: space-between;
@@ -238,7 +230,7 @@ nav a {
     color: rgb(99, 97, 97);
   }
  
-   /* @media (max-width: 576) { */
+   
     @media screen and (max-width: 576px) {
     .image-container {
       padding: 10%;
@@ -290,12 +282,12 @@ nav a {
   font-size: 10px;
   color: white;
   }
-/* .text-content h1 {
+.text-content h1 {
   font-size: 25px;
   line-height: 1.4;
   margin: 0;
   color: whitesmoke;
-} */
+}
 .text-content h1 small {
   font-size: 10px;
   color: rgb(99, 97, 97);  
@@ -316,14 +308,7 @@ nav a {
   margin-right: -120%;
   height: 210px;
 }
- /* /* padding: 20px;   
-    align-items: flex-start;
-    border-radius: 10px;
-    margin: 20px 0;
-    text-align: left-center;
-    width: 75%;
-    margin-top: 1%;
-    margin-left: -6%;  */
+
 .tomato-button {
   display: inline-block;
     background-color: orangered;
@@ -339,11 +324,11 @@ nav a {
 }
    
    @media screen and (max-width: 576px) {
-    /* .box3 {
+    .box3 {
       display: flex;
       padding: 20px;
       
-    } */
+    }
       .image-content {
         flex: 1 1 100%;
         text-align: center;
@@ -371,18 +356,8 @@ nav a {
     color:rgb(99, 97, 97);
 
   }
-  /*.image-grid { 
-   max-width: 55%;
-  height: auto;
-  border-radius: 8px;
-  width: 200px;
-  height-right: 20px;
-  object-fit: cover;
-  margin-top: 100%;
-  margin-right: 120%;
-  height: 210px;} */
-    .image-grid {
-      
+  
+    .image-grid {      
     display: flex;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -448,6 +423,19 @@ nav a {
 .blue-overlay::before {
     background-color: rgba(0, 0, 255, 0.5);
 }
+
+@media screen and (max-width: 576px) {
+  .Trainings {
+    font-size: 18px;
+  }
+  small {
+    font-size: 16px;
+  }
+.image-grid {
+  grid-template-columns: repeat(100px, 1fr);
+  padding: 5px;
+} 
+}
 .BMI {
   text-align: center;
   font-size: 25px;
@@ -459,11 +447,37 @@ small {
   color: rgb(99, 97, 97);
 }
 
+@media screen and (max-width: 576px) {
+  .title, .subtitle {
+    font-size: 11px;
+  }
+  .small-text {
+    font-size: 0.8em;
+  }
+  .BMI {
+    font-size: 18px;
+    text-align: center;
+  }
+  small {
+    font-size: 7px;
+    text-align: center;
+  }
+  .red-button {
+    padding: 8px 15px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
 .Meet {
   text-align: center;
   font-size: 15px;
   color: white;
 }
+
+
 small {
   text-align: center;
   font-size: 9px;
@@ -471,18 +485,24 @@ small {
 }
  
   .image-content-team {
+    display: flex;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
-    justify-content: center;    
-    gap: 10px;
+    justify-content: center; 
+    justify-content: space-between;   
+    margin: 20px 0;
+    row-gap: 20px;
+    column-gap: -30px;
     
 }
 .image-content-team img {
-  width: 100%;
+  width: 250px;
   height: 100%;
   display: block;
   border-radius: 10px;
+  
+  /* padding: 10px; */
 }
 .image-content-team::before {
   content: '';
@@ -494,8 +514,26 @@ small {
   opacity: 0.5;
   z-index: 1;
 }
+@media screen and (max-width: 576px) {
+  .Meet {
+    font-size: 13px;
+  }
+  small {
+    font-size: 7px;
+  }
+  .image-content-team {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  
+.image-content-team img {
+border-radius: 5px;
+}
+}
+
 .wrapper {
   margin-bottom: 8%;
+ 
 }
 .box-container {
   display: flex;
@@ -542,8 +580,31 @@ small {
   font-size: 1.1em;
   margin-left: auto;
   margin-right: auto
-  /* width: 80%; */
-  /* max-width: 600px */
+ 
+}
+@media screen and (max-width: 576px) {
+.box-container {
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+.left-content, .middel-column, .right-column {
+  width: 100%;
+  margin-top: 15px;
+}
+.left-content h1 {
+  font-size: 24px;
+  margin-left: 0;
+}
+.right-column p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+.footer {
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+}
 }
  
   
